@@ -665,7 +665,7 @@ options
 
 const daftar1 = `_Sebelum Menggunakan Bot_\n_Wajib Daftar Terlebih Dahulu Ya_`
 const daftar2 = 'Klik Tombol Di Bawah Untuk Verifikasi'
-const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `💫VERIFIKASI BIAR SiFzz KENAL LU💫`,},type: 1,},]
+const daftar3 = [{buttonId: `verify`,buttonText: {displayText: `💫VERIFIKASI💫`,},type: 1,},]
 
 const createSerial = (size) => {
 return crypto.randomBytes(size).toString('hex').slice(0, size)
@@ -1159,8 +1159,8 @@ case 'allmenu': case 'gzmenu':
 if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: mek})
 stamtus = `${menunya(prefix)}`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: '💌SCRIPT BOT💌'},type:1},
-{buttonId:`listmenu`, buttonText: {displayText: '🛐SIMPEL MENU🛐'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: '📔SCRIPT BOT📔'},type:1},
+{buttonId:`listmenu`, buttonText: {displayText: '⏳SIMPLE MENU🧋'}, type: 1}
 ]
 const allmenu = {
     contentText: `${stamtus}`,
@@ -1206,8 +1206,8 @@ stamtus = `❏ 「 \`\`\`MENU GROUP\`\`\` 」
 ◈ ${prefix}totag [ reply media ]
 ────────────────────`
 buttons = [
-{buttonId:`sc`,buttonText:{displayText: ' ❀Script Bot❀'},type:1},
-{buttonId:`listmenu`, buttonText: {displayText: '♡Simpel Menu♡'}, type: 1}
+{buttonId:`sc`,buttonText:{displayText: ' <(Script Bot)>'},type:1},
+{buttonId:`listmenu`, buttonText: {displayText: '✧◝(Simpel Menu)◜✧'}, type: 1}
 ]
 const grup = {
     contentText: `${stamtus}`,
@@ -1231,14 +1231,14 @@ const serialUser = createSerial(18)
 *◈ Pengguna:* ${_registered.length}
 └❏───────────`
 gbutsan = [
-{buttonId:`command`,buttonText:{displayText:'😾️MENU😾️'},type:1},
-{buttonId:`donasi`,buttonText:{displayText:'💗DONASI💗'},type:1}
+{buttonId:`command`,buttonText:{displayText:'MENU'},type:1},
+{buttonId:`donasi`,buttonText:{displayText:'DONASI'},type:1}
 ]
 mhan = await alpha.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const sendBtnVeryy = {
 imageMessage: mhan.message.imageMessage,
 contentText:`${jancok}`,
-footerText:'Terimakasih Sudah Mendaftar\n*_©SiFzz_*', 
+footerText:'Terimakasih Sudah Mendaftar\n*_©ʜɪɴᴀᴛᴀʙᴏᴛᴢ_*', 
 buttons: gbutsan,
 headerType: 4
 }
